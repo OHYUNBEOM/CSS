@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>made,deleteline</title>
+    <title>priorselector</title>
     <style>
         a{
             color:black;
@@ -19,16 +19,23 @@
         {
             color:gray;
         }
+        #active
+        {
+            color:red;
+        }
     </style>
     <!-- 다음과같이 body 태그 내에서 각 a 태그에 class 값을 saw 로 부여하고 , 
     head 태그의 style 태그 내에서 class 로 saw 를 갖는 부분에 대해 설정이 가능하다
     class 를 다룰때 style 태그 내에서 .클래스명 으로 적는것에 유의 -->
+
+    <!-- 태그에 id =""로 id 를 부여하게되면 , style 태그내에서 사용시에 #id이름 으로 사용하고
+    style 태그내에 작성시 우선순위는 id > class > 기본태그 의 우선순위를 가진다 -->
 </head>
 <body>
     <h1><a href="selector-basic.html">WEB</a></h1>
     <ol>
         <li><a href="htmlhyper.html"class = "saw">HTML</a></li>
-        <li><a href="csshyper.html"class = "saw">CSS</a></li>
+        <li><a href="csshyper.html"class = "saw" id="active">CSS</a></li>
         <li><a href="javascript.html">JavaScript</a></li>
     </ol>
 </body>
