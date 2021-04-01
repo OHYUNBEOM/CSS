@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlhyper</title>
+    <style>
+        body
+        {
+            margin:0;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        h1 
+        {
+            font-size:45px;
+            text-align:center;
+            border-bottom:1px solid grey;
+            margin:0;
+            padding:20px;
+        }
+        ol
+        {
+            border-right:1px solid grey;
+            width:80px;
+            margin:0;
+            padding:20px;
+        }
+        #grid
+        {
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        /*
+        ol 부분과 작게 나눠놓은 div 부분이 두개로 분리되기에 ol 부분은 150px 을 주고
+        div 부분은 1fr 로 나머지부분을 쓰게하여 다음과같이 나타남
+        */
+    </style>
+</head>
+<body>
+    <h1><a href="selector-basic.html">WEB</a></h1>
+    <div id ="grid">
+        <ol>
+            <li><a href="htmlhyper.html">HTML</a></li>
+            <li><a href="csshyper.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ol>
+        <div>
+            <h2>HTML</h2>
+            <p>
+                Hypertext Markup Language ( HyperText Markup Language, HTML , munhwaeo : second body markings Post language, hyper text markup Post language) web pages dominant for the markup language is. In addition, HTML provides a way to create structured documents with links, citations, and other items, as well as representing structural meaning for text such as headings, paragraphs, and lists . And it can be used to embed images and objects and create interactive forms. HTML is written in the form of HTML elements that are "tags" enclosed in angle brackets within the web page content . HTML is a Web browser that affect the behavior of HTML processing device, such as a JavaScript that defines the appearance and layout of text and other items CSS same script can contain or recall. The W3C , co-director of the HTML and CSS standards , recommends the use of CSS for clear and representative markup.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
