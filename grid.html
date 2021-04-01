@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #grid
+        {
+            border:5px solid pink;
+            display:grid;
+            grid-template-columns: 150px 1fr;
+            /*
+            display 를 block 으로 둘 시 화면 전체를 사용하겠다는 의미
+            */
+            /*
+            display 를 grid 로 주고 , grid-template 를 columns 로 사용하겠다 하면
+            하나의 행에 표시가 되며 , 첫번째칸은 150px 을 사용하고 두번째칸은 남은 나머지만큼 쓴다 - 1fr
+            grid-template-columns:1fr 1fr; --> 1대1 비율로 사용하겠다
+            */
+
+            /*
+            다음과 같이 grid 라는 태그들이 지원이 되는 태그인지 , 많이 사용되는지를
+            보이는 사이트 - caniuse.com 에서 검색 시 볼 수 있다 (그리드 - 그리드 소개에 명시)
+            */
+        }
+        div
+        {
+            border:5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id ="grid">
+        <div>NAVICATION</div>
+        <div>ARTICLE</div>
+    </div>
+</body>
+</html>
